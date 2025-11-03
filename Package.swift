@@ -20,6 +20,11 @@ let package = Package(
             name: "ExocortexTaskTracker"
         ),
         .executableTarget(
+            name: "ExocortexTaskTrackerApp",
+            dependencies: ["ExocortexTaskTracker"],
+            path: "App"
+        ),
+        .executableTarget(
             name: "ExocortexTaskTrackerTests",
             dependencies: ["ExocortexTaskTracker"],
             path: "Tests/ExocortexTaskTrackerTests"

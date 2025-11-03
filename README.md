@@ -1,14 +1,43 @@
 # ExocortexTaskTracker
 
-Simple Swift package for task time tracking with pause/resume functionality.
+Simple Swift package for task time tracking with pause/resume functionality + iOS App.
 
 ## Overview
 
-This package provides a `TaskTimer` class that tracks elapsed time for tasks with support for:
-- ✅ Start/stop timing
-- ✅ Pause/resume functionality  
-- ✅ Formatted duration output (HH:mm:ss)
-- ✅ Simple API with no dependencies (Foundation only)
+This package provides:
+- ✅ **TaskTimer class** - Track elapsed time with pause/resume
+- ✅ **iOS App** - Simple SwiftUI interface
+- ✅ **Testing framework** - Custom test runner
+- ✅ **CI/CD** - GitHub Actions with branch protection
+
+## 📱 iOS App
+
+The project now includes a simple iOS app with SwiftUI interface.
+
+### Running the iOS App
+
+**Option 1: Xcode (Recommended)**
+```bash
+# Generate Xcode project (if not already generated)
+xcodegen generate
+
+# Open in Xcode
+open ExocortexTaskTracker.xcodeproj
+
+# Select iOS Simulator and Run (⌘R)
+```
+
+**Option 2: Command Line (macOS only)**
+```bash
+swift run ExocortexTaskTrackerApp
+```
+
+### Current UI
+
+- **Home Screen**: Displays "Hello world!!!"
+- More features coming soon...
+
+See [IOS_APP.md](IOS_APP.md) for details.
 
 ## Installation
 
