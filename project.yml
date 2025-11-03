@@ -1,0 +1,22 @@
+name: ExocortexTaskTracker
+options:
+  bundleIdPrefix: com.exocortex
+  deploymentTarget:
+    iOS: "16.0"
+packages:
+  ExocortexTaskTracker:
+    path: .
+targets:
+  ExocortexTaskTracker:
+    type: application
+    platform: iOS
+    sources:
+      - App
+    dependencies:
+      - package: ExocortexTaskTracker
+        product: ExocortexTaskTracker
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.exocortex.tasktrackerapp
+        INFOPLIST_FILE: App/Info.plist
+        ENABLE_PREVIEWS: YES
